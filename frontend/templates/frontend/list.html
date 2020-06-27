@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bootstrap4/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="task-container">
+            <div id="form-wrapper">
+                <form action="" id="form">
+                    <div class="flex-wrapper">
+                        <div style="flex: 6;">
+                            <input id="title" name="title" type="text" class="form-control" placeholder="Add task">
+                        </div>
+                        <div style="flex: 1;">
+                            <button id="submit" class="btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="list-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>
